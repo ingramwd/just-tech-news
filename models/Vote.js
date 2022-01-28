@@ -14,14 +14,14 @@ Vote.init(
             type: DataTypes.INTEGER,
             allowNull: false,
             references: {
-                model: 'post',
+                model: 'user',
                 key: 'id'
             },
             post_id: {
                 type: DataTypes.INTEGER,
                 allowNull: false,
                 references: {
-                    mode: 'post',
+                    model: 'post',
                     key: 'id'
                 }
             }
